@@ -13,7 +13,7 @@
         <fieldset style="width:40%">
             <legend>Sobre ti:</legend>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="nombre" size="15"pattern="[A-Za-z]" title="no permitidos números" autocomplete="off" autofocus required tabindex="1"> <br>
+            <input type="text" id="name" name="nombre" size="15" pattern="[A-Za-z]" title="no permitidos números" autocomplete="off" autofocus required tabindex="1"> <br>
             <label for="surname">Apellidos:</label>
             <input type="text" id="surname" name="apellidos" pattern="[A-Za-z]" title="no permitidos números" autocomplete="off" required tabindex="2"> <br>
             <label for="age">Age:</label>
@@ -62,6 +62,7 @@
             <li>
                 <label for="paseo">Paseo:</label>
                 <select id="paseo" name="paseo">
+                    <option value="none" novalidate="true">----</option>
                     <option value="Señorial">Señorial</option>
                     <option value="Anti-plebeyos">Anti-plebeyos</option>
                     <option value="porencimahombro">PorEncimaDelHombro</option>
@@ -70,6 +71,7 @@
             <li> 
                 <label for="montaña">Montaña:</label>
                 <select id="montaña" name="montaña">
+                    <option value="none" novalidate="true">----</option>
                     <option value="Gamusinos">Gamusinos</option>
                     <option value="Huelefloresp">Hueleflores Premium</option>
                     <option value="Fango">Fangolover</option>
@@ -78,6 +80,7 @@
             <li>
                 <label for="carreras">Carreras</label>
                 <select name="carreras" id="carreras">
+                    <option value="none" novalidate="true">----</option>
                     <option value="metroym">Metroymedio</option>
                     <option value="flourescente">3 de la tarde. Fluorescente edition</option>
                     <option value="grupitors">Grupitors</option>
