@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios viejuners</title>
+    <style>
+        .inforpersonal{
+            display:inline-block;
+            width: 70px;
+            
+        }
+        #name, #surname{
+            display:inline-block;
+            width: 170px;
+        }
+        .contact{
+            display:inline-block;
+            width: 130px;
+        }
+        #email, #tel{
+            display:inline-block;
+            width: 150px;
+        }
+        .date{
+            display:inline-block;
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
     <form action="" method="post" >
@@ -12,11 +35,11 @@
         <h3>Formulario:</h3>
         <fieldset style="width:40%">
             <legend>Sobre ti:</legend>
-            <label for="name">Nombre:</label>
+            <label for="name" class="inforpersonal">Nombre:</label>
             <input type="text" id="name" name="nombre" size="15" pattern="[A-Za-z]" title="no permitidos números" autocomplete="off" autofocus required tabindex="1"> <br>
-            <label for="surname">Apellidos:</label>
+            <label for="surname" class="inforpersonal">Apellidos:</label>
             <input type="text" id="surname" name="apellidos" pattern="[A-Za-z]" title="no permitidos números" autocomplete="off" required tabindex="2"> <br>
-            <label for="age">Age:</label>
+            <label for="age" class="inforpersonal">Age:</label>
             <input type="number" id="age" name="edad" min="40" max="100" step="1" required tabindex="3"> <br>
             <label for="sexM">Hombre</label>
             <input type="radio" id="sexM" name="sexo" value="masculino">
@@ -28,9 +51,9 @@
             
             <fieldset>
                 <legend>Contacto:</legend>
-                <label for="email">Correo electrónico:</label>
+                <label for="email" class="contact">Correo electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="on" tabindex="5" required> <br>
-                <label for="tel">Teléfono:</label>
+                <label for="tel" class="contact">Teléfono:</label>
                 <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="formato teléfono" placeholder="555-555-555" tabindex="6" size="10"><br>
             </fieldset> 
             <input type="reset" value="Restablecer todo"> <br>
@@ -49,13 +72,13 @@
     <h1 align="center">Los ladronzuelos de bicicletas</h1>
     <fieldset style="width:30%">
         <legend><h3>Formulario</h3></legend>
-        <label for="date">Fecha:</label>
+        <label for="date" class="date">Fecha:</label>
         <input type="date" name="fecha" id="date" required><br><br>
-        <label for="time">Hora:</label>
+        <label for="time" class="date">Hora:</label>
         <input type="time" id="time" name="hora" required><br><br>
         <label for="colorbici">Color de la bicicleta:</label>
         <input type="color" name="colorbici" id="colorbici"> <br><br>
-        <label for="price">Rango de precio:</label>
+        <label for="price">Rango de precio:</label> <br>
         <input type="range" id="price" name="preciobici" min="100" max="1000" step="100"> <br><br>
         <label for="">Tipo de bicicleta:</label> <br>
         <!--opcion 1-->
@@ -120,7 +143,7 @@
             <label for="timbre">Timbre</label><br>
             <input type="checkbox" id="foco" name="foco">
             <label for="foco">Foco</label><br><br>
-        <label for="marcas">Marca de la bicicleta</label><br>
+        <label for="marcas">Marca de la bicicleta:</label><br>
         <input list="marcas">
             <datalist id="marcas">
                 <option value="Specialized">
